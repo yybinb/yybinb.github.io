@@ -209,10 +209,10 @@ overflow:hidden;
 
 ## 弹出键盘时页面上推
 
-```json
+```js
 //pages.json
-"app-plus": {
-    "softinputMode": "adjustResize"
-}
+// "app-plus": {
+//     "softinputMode": "adjustResize"
+// }
 ```
 
