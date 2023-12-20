@@ -1,20 +1,5 @@
 # **uniapp笔记**
 
-|                           标题                            |                                                                                                 地址                                                                                                 |
-|:-------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|                uniapp点击某个按钮跳转到当前页面的某个位置                 | https://yybinb.github.io/#uniapp%E7%82%B9%E5%87%BB%E6%9F%90%E4%B8%AA%E6%8C%89%E9%92%AE%E8%B7%B3%E8%BD%AC%E5%88%B0%E5%BD%93%E5%89%8D%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%9F%90%E4%B8%AA%E4%BD%8D%E7%BD%AE |
-|                        获取当前屏幕的高度                        |                                            https://yybinb.github.io/#%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%B1%8F%E5%B9%95%E7%9A%84%E9%AB%98%E5%BA%A6                                             |
-|                      手机上下滑动定位到某个锚点                      |                          https://yybinb.github.io/#%E6%89%8B%E6%9C%BA%E4%B8%8A%E4%B8%8B%E6%BB%91%E5%8A%A8%E5%AE%9A%E4%BD%8D%E5%88%B0%E6%9F%90%E4%B8%AA%E9%94%9A%E7%82%B9                           |
-|                       获取下级页面传递的参数                       |                                   https://yybinb.github.io/#%E8%8E%B7%E5%8F%96%E4%B8%8B%E7%BA%A7%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%92%E7%9A%84%E5%8F%82%E6%95%B0                                    |
-|                      全局定义点击其他地方隐藏                       |                               https://yybinb.github.io/#%E5%85%A8%E5%B1%80%E5%AE%9A%E4%B9%89%E7%82%B9%E5%87%BB%E5%85%B6%E4%BB%96%E5%9C%B0%E6%96%B9%E9%9A%90%E8%97%8F                               |
-|                        滑动时隐藏元素标签                        |                                            https://yybinb.github.io/#%E6%BB%91%E5%8A%A8%E6%97%B6%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0%E6%A0%87%E7%AD%BE                                             |
-|                         验证正则表达式                         |                                                     https://yybinb.github.io/#%E9%AA%8C%E8%AF%81%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F                                                      |
-|                         获取元素的高度                         |                                                     https://yybinb.github.io/#%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%E7%9A%84%E9%AB%98%E5%BA%A6                                                      |
-|                         超出显示省略号                         |                                                     https://yybinb.github.io/#%E8%B6%85%E5%87%BA%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7                                                      |
-|                        弹出键盘时页面上推                        |                                            https://yybinb.github.io/#%E5%BC%B9%E5%87%BA%E9%94%AE%E7%9B%98%E6%97%B6%E9%A1%B5%E9%9D%A2%E4%B8%8A%E6%8E%A8                                             |
-
-***
-
 > - [uniapp点击某个按钮跳转到当前页面的某个位置](https://yybinb.github.io/#uniapp%E7%82%B9%E5%87%BB%E6%9F%90%E4%B8%AA%E6%8C%89%E9%92%AE%E8%B7%B3%E8%BD%AC%E5%88%B0%E5%BD%93%E5%89%8D%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%9F%90%E4%B8%AA%E4%BD%8D%E7%BD%AE)
 
 > - [获取当前屏幕的高度](https://yybinb.github.io/#%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%B1%8F%E5%B9%95%E7%9A%84%E9%AB%98%E5%BA%A6)
