@@ -183,4 +183,14 @@ info.boundingClientRect(function(data) { //data - 各种参数
     /* 溢出部分隐藏 */
     overflow:hidden;
 ```
+***
+
+## 弹出键盘时页面上推
+
+```json
+    // pages.json
+    "app-plus": {
+        "softinputMode": "adjustResize"
+    }
+```
 
