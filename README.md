@@ -83,10 +83,10 @@ getTop(index) {
 uni.navigateTo({
   url:'/pages/institute/searchMajor',
   events:{
-    		//获取下级页面传递的参数
-			monitorSelectedFaculties: (arr) => {
-            console.log(arr)
-          }
+      //获取下级页面传递的参数
+      monitorSelectedFaculties: (arr) => {
+          console.log(arr)
+      }
   }
 })
 //下级页面的传参
@@ -175,42 +175,44 @@ handletouchstart(){
 ```javascript
 let info = uni.createSelectorQuery().select(".test_box");
 info.boundingClientRect(function(data) { //data - 各种参数
-			console.log(data) // 获取元素的相关信息
-			if (data.height > 210) {
-				that.domWidth = '730rpx'
-			} else {
-				that.domWidth = '520rpx'
-			}
-		}).exec()
+    console.log(data) // 获取元素的相关信息
+    if (data.height > 210) {
+        that.domWidth = '730rpx'
+    } else {
+        that.domWidth = '520rpx'
+    }
+}).exec()
 ```
 
 ***
 
 ## 超出显示省略号
 
-```css
-	// 单行超出显示省略号
-	overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-	//多行超出显示省略号
-	/* 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。*/
-    display: -webkit-box;
-    /* 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。*/
-    -webkit-box-orient:vertical;
-    /*要显示的行数*/
-    -webkit-line-clamp:2;
-    /* 溢出部分隐藏 */
-    overflow:hidden;
+```scss
+//单行超出显示省略号
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+
+
+//多行超出显示省略号
+/* 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。*/
+display: -webkit-box;
+/* 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。*/
+-webkit-box-orient:vertical;
+/*要显示的行数*/
+-webkit-line-clamp:2;
+/* 溢出部分隐藏 */
+overflow:hidden;
 ```
 ***
 
 ## 弹出键盘时页面上推
 
 ```json
-    // pages.json
-    "app-plus": {
-        "softinputMode": "adjustResize"
-    }
+//pages.json
+"app-plus": {
+    "softinputMode": "adjustResize"
+}
 ```
 
