@@ -216,3 +216,16 @@ overflow:hidden;
 // }
 ```
 
+***
+
+## nvue阻止事件冒泡
+
+```javascript
+// 标签里面使用点击事件 @click="click($event)" 传参必须添加$event
+// 事件里面使用e来接收 click(e) 并在事件末尾使用 e.stopPropagation() 来阻止事件
+// <view @click="click($event)"><view>
+// click(e){
+//     e.stopPropagation()
+// }
+```
+
