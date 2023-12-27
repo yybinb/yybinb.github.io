@@ -20,6 +20,8 @@
 
 > - [弹出键盘时页面上推](https://yybinb.github.io/#%E5%BC%B9%E5%87%BA%E9%94%AE%E7%9B%98%E6%97%B6%E9%A1%B5%E9%9D%A2%E4%B8%8A%E6%8E%A8)
 
+> - [nvue阻止事件冒泡](https://yybinb.github.io/#nvue%E9%98%BB%E6%AD%A2%E4%BA%8B%E4%BB%B6%E5%86%92%E6%B3%A1) 
+
 ***
 
 ## **uniapp点击某个按钮跳转到当前页面的某个位置**
