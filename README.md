@@ -22,7 +22,7 @@
 
 > - [nvue阻止事件冒泡](https://yybinb.github.io/#nvue%E9%98%BB%E6%AD%A2%E4%BA%8B%E4%BB%B6%E5%86%92%E6%B3%A1) 
 
-> - [创建原生子页面](https://yybinb.github.io/#%E5%88%9B%E5%BB%BA%E5%8E%9F%E7%94%9F%E5%AD%90%E7%AA%97%E5%8F%A3)
+> - [创建原生子窗口](https://yybinb.github.io/#%E5%88%9B%E5%BB%BA%E5%8E%9F%E7%94%9F%E5%AD%90%E7%AA%97%E5%8F%A3)
 
 ***
 
