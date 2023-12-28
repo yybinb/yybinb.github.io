@@ -233,6 +233,8 @@ overflow:hidden;
 
 ***
 
+## 创建原生子窗口
+
 ```javascript
 //创建原生子窗口需要在page.json中页面配置里面创建
 // "app-plus": {
