@@ -231,3 +231,36 @@ overflow:hidden;
 // }
 ```
 
+***
+
+```javascript
+//创建原生子窗口需要在page.json中页面配置里面创建
+// "app-plus": {
+//     "subNVues": [
+//         {
+//             "id": "instituteManagent", // 唯一标识
+//             "path": "pages/index/subnvue/instituteManagent", // 页面路径
+//             "style": {
+//                 "position": "static",
+//                 "left": "0px",
+//                 "top": "0px",
+//                 "background": "transparent"
+//             }
+//         },
+//         {
+//             "id": "studentJob", // 唯一标识
+//             "path": "pages/index/subnvue/studentJob", // 页面路径
+//             "style": {
+//                 "position": "static",
+//                 "left": "0px",
+//                 "top": "0px",
+//                 "background": "transparent"
+//             }
+//         }
+//     ]
+// }
+//之后在页面中获取实例并使用事件展示与隐藏
+//const subNVue = uni.getSubNVueById("instituteManagent")
+//subNVue.hide(); subNVue.show();
+```
+
