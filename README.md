@@ -20,9 +20,11 @@
 
 > - [弹出键盘时页面上推](https://yybinb.github.io/#%E5%BC%B9%E5%87%BA%E9%94%AE%E7%9B%98%E6%97%B6%E9%A1%B5%E9%9D%A2%E4%B8%8A%E6%8E%A8)
 
-> - [nvue阻止事件冒泡](https://yybinb.github.io/#nvue%E9%98%BB%E6%AD%A2%E4%BA%8B%E4%BB%B6%E5%86%92%E6%B3%A1) 
+> - [nvue阻止事件冒泡](https://yybinb.github.io/#nvue%E9%98%BB%E6%AD%A2%E4%BA%8B%E4%BB%B6%E5%86%92%E6%B3%A1)
 
 > - [创建原生子窗口](https://yybinb.github.io/#%E5%88%9B%E5%BB%BA%E5%8E%9F%E7%94%9F%E5%AD%90%E7%AA%97%E5%8F%A3)
+
+> - [uniapp scrollview 不显示滚动条]() 
 
 ***
 
@@ -209,6 +211,7 @@ display: -webkit-box;
 /* 溢出部分隐藏 */
 overflow:hidden;
 ```
+
 ***
 
 ## 弹出键盘时页面上推
@@ -268,3 +271,19 @@ overflow:hidden;
 //subNVue.hide(); subNVue.show();
 ```
 
+***
+
+## uniapp scrollview不显示滚动条
+
+```css
+/* #ifdef MP-WEIXIN || APP-PLUS */
+		::-webkit-scrollbar {
+		    display: none;
+		    width: 0 !important;
+		    height: 0 !important;
+		    -webkit-appearance: none;
+		    background: transparent;
+		    color: transparent;
+		  }
+	/* #endif */
+```
