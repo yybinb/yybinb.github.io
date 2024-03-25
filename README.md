@@ -287,3 +287,161 @@ overflow:hidden;
 		  }
 	/* #endif */
 ```
+
+# react笔记
+
+> - [创建项目以及配置文件](https://yybinb.github.io/#%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+
+
+
+------
+
+
+
+## 创建项目以及配置文件
+
+1. 创建项目：npx create-react-app 项目名称
+2. 打开项目：cd 项目名称
+3. 启动项目：npm start
+4. 暴露配置项：npm run eject 
+5. 暴露的配置项里面的path.js里面包含项目里面的配置文件及所有路径
+6. index.js中引入的React负责逻辑控制，数据，VDOM。引入的ReactDOM负责渲染实际DOM->DOM
+
+## 对象声明及渲染
+
+​	1.字符串形式：const name = ‘App’ 
+
+​		渲染：``` <div>{name}</div>```
+
+ 2. 对象形式：
+
+    ```jsx
+    const obj = {name:'jack',age:12}
+    ```
+
+    渲染：
+
+    ```jsx
+    <div>{nameFuction(obj)}</div>
+    ```
+
+    需要在定义方法 
+
+    ```jsx
+    nameFuction(obj){return obj.name}
+    ```
+
+    
+
+	3. 布尔形式：
+
+    ```jsx
+    const show = true
+    ```
+
+    渲染：
+
+    ```jsx
+    <div>{ show ?  111 : 222 }</div>
+    ```
+
+    
+
+	4. 对象形式：
+
+    ```jsx
+    const arr = [0,1,2,3,4,5,6]
+    ```
+
+    渲染：
+
+    ```jsx
+    <ul>
+        {arr.map((item,index)=>{
+            return <li key={index}>{item}</li>
+        })}
+    </ul>
+    ```
+
+## react组件
+
+### class组件
+
+class组件通常拥有状态和生命周期，继承于Component,实现render方法。用class组件创建一个Clock：
+
+```jsx
+import React, {Component} from "react";
+// 创建class组件，继承react中的component
+export default class ClassComponents extends Component {
+    // 构造器
+    constructor(props) {
+        // 有构造器必须super，语法规定
+        super(props);
+        // state需要一个对象来承接
+        // 这里的this指的是实例对象
+        this.state = {
+            name: 'Class Components',
+            date: new Date().toLocaleTimeString()
+        }
+    }
+   // 生命周期 组件挂载之后
+    componentDidMount() {
+        this.interval = setInterval(() => {
+            // 更新状态,不能用this.state更改state中的值
+            this.setState(({
+                date: new Date().toLocaleTimeString()
+            }))
+        }, 1000)
+    }
+    // 生命周期 组件卸载之前执行
+    componentWillUnmount() {
+        clearInterval(this.interval)
+    }
+    render() {
+        const {name, date} = this.state;
+
+        function returnValue(value) {
+            return value
+        }
+
+         return (
+            <div className={'classComponents'}>
+                <div>{returnValue(name)}</div>
+                <div className={'classComponents_space'}></div>
+                <div>{returnValue(date)}</div>
+            </div>
+        )
+    }
+}
+```
+
+### function组件
+
+```jsx
+import React,{ useState, useEffect } from "react";
+import styles from '../App.module.css'
+
+export  function FunctionComponents(props){
+    const [name,setName] = useState('Function Components')
+
+    const [date,setDate] = useState(new Date().toLocaleTimeString())
+
+    useEffect(()=>{
+        const interval = setInterval(()=>{
+            setDate(new Date().toLocaleTimeString())
+        },100)
+        return ()=>{
+            clearInterval(interval)
+        }
+    },[])
+
+    return (
+        <div className={styles.functionComponents}>
+            <div>{name}</div>
+            <div className={styles.functionComponents_space}></div>
+            <div>{date}</div>
+        </div>
+    )
+}
+```
+
