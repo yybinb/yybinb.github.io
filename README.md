@@ -1,5 +1,7 @@
 # **uniapp笔记**
 
+> - [vpn链接](https://hello36d.com/register?aff=bM33ZFKd)
+
 > - [uniapp点击某个按钮跳转到当前页面的某个位置](https://yybinb.github.io/#uniapp%E7%82%B9%E5%87%BB%E6%9F%90%E4%B8%AA%E6%8C%89%E9%92%AE%E8%B7%B3%E8%BD%AC%E5%88%B0%E5%BD%93%E5%89%8D%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%9F%90%E4%B8%AA%E4%BD%8D%E7%BD%AE)
 
 > - [获取当前屏幕的高度](https://yybinb.github.io/#%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%B1%8F%E5%B9%95%E7%9A%84%E9%AB%98%E5%BA%A6)
